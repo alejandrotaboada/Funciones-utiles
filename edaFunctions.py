@@ -1,5 +1,6 @@
 from scipy.stats import chi2
 from scipy.stats import chi2_contingency
+import pandas as pd
 
 def prueba_chi_2(df, feature, target,prob = 0.95):
     cross = pd.crosstab(df[feature], df[target])
